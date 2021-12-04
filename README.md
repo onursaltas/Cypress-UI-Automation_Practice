@@ -4,7 +4,8 @@ Cypress is a next generation front end testing tool built for the modern web. Th
 
 
 # Command
-install node and npm first
-cd /your/project/path
-npm install cypress --save-dev
-npx cypress open
+1. Clone the project
+2. install node and npm first
+3. cd /your/project/path
+4. npm install cypress --save-dev
+5. npx cypress open
