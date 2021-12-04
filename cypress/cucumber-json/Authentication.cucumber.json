@@ -1,0 +1,285 @@
+[
+  {
+    "description": "    application Regression",
+    "keyword": "Feature",
+    "name": "Authentication",
+    "line": 1,
+    "id": "authentication",
+    "tags": [],
+    "uri": "Authentication.feature",
+    "elements": [
+      {
+        "id": "authentication;create-account-passed",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Create Account Passed",
+        "tags": [
+          {
+            "name": "@register-account",
+            "line": 4
+          },
+          {
+            "name": "@e2e-test",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am at Automation Practice while I select the option create an account and I complete my \"evictorio.uni751@gmail.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 11664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I complete information such as \"Mr\", \"Roberexd\", \"xdfxdxd\", \"Kj123s\", \"3\", \"March\" and \"1997\"",
+            "result": {
+              "status": "failed",
+              "duration": 30058000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `input#id_gender1`, but never found it.\n    at Authentication.getCheckBoxMr (http://automationpractice.com/__cypress/tests?p=cypress/integration/automationpractice/Authentication.feature:517:17)\n    at authenticationAction.clickTittleMr (http://automationpractice.com/__cypress/tests?p=cypress/integration/automationpractice/Authentication.feature:74:33)\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/automationpractice/Authentication.feature:331:26)\n    at Context.resolveAndRunStepDefinition (http://automationpractice.com/__cypress/tests?p=cypress/integration/automationpractice/Authentication.feature:12429:29)\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/automationpractice/Authentication.feature:11773:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I complete the information about my address such as \"Belcorp\", \"Av. Grau\", \"Av. Aviación\", \"Lince\",\"United States\", \"07031\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I continue to complete with \"Alabama\", \"Elpepe\", \"940478546\", \"940478452\" and \"don pepe\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Finally I select the button Register for the creation about the account",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify the \"Roberexd\" and \"xdfxdxd\" account is log in how session active",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "authentication;login-passed",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Login Passed",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 17
+          },
+          {
+            "name": "@e2e-test",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I am at Automation Practice",
+            "result": {
+              "status": "passed",
+              "duration": 2280000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I try to login into the webpage",
+            "result": {
+              "status": "passed",
+              "duration": 1999000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I write my email and password",
+            "result": {
+              "status": "passed",
+              "duration": 4975000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I verify the user is Eduardo Victorio",
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "authentication;login-failed",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Login Failed",
+        "tags": [
+          {
+            "name": "@e2e-test",
+            "line": 24
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I am at Automation Practice",
+            "result": {
+              "status": "passed",
+              "duration": 1626000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I try to login into the webpage",
+            "result": {
+              "status": "passed",
+              "duration": 1849000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "user",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "pepito@gmail.com",
+                      "failedpsd"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I write my account",
+            "result": {
+              "status": "passed",
+              "duration": 2301000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I verify the user was not logged in",
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "authentication;forgot-your-password-passed",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Forgot your password Passed",
+        "tags": [
+          {
+            "name": "@e2e-test",
+            "line": 32
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "I am at Automation Practice",
+            "result": {
+              "status": "passed",
+              "duration": 1686000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I try to login into the webpage",
+            "result": {
+              "status": "passed",
+              "duration": 1577000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I select the option Forgot",
+            "result": {
+              "status": "passed",
+              "duration": 888000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I write my \"evictorio.uni@gmail.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 1428000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "I verify the \"A confirmation email has been sent to your address: evictorio.uni@gmail.com\" for email was sent",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

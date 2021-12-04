@@ -1,0 +1,29 @@
+{
+  "name": "automationpractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.3.0",
+    "cypress": "^7.7.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-file-upload": "^5.0.3"
+  },
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  }
+}
